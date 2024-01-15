@@ -14,6 +14,7 @@
 		C91B23D12B535D9E00BAF6F8 /* TikTok_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B23D02B535D9E00BAF6F8 /* TikTok_SwiftUITests.swift */; };
 		C91B23DB2B535D9E00BAF6F8 /* TikTok_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B23DA2B535D9E00BAF6F8 /* TikTok_SwiftUIUITests.swift */; };
 		C91B23DD2B535D9E00BAF6F8 /* TikTok_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B23DC2B535D9E00BAF6F8 /* TikTok_SwiftUIUITestsLaunchTests.swift */; };
+		C91B23FF2B556C3A00BAF6F8 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B23FE2B556C3A00BAF6F8 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		C91B23D62B535D9E00BAF6F8 /* TikTok-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TikTok-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91B23DA2B535D9E00BAF6F8 /* TikTok_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTok_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		C91B23DC2B535D9E00BAF6F8 /* TikTok_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTok_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C91B23FE2B556C3A00BAF6F8 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,12 @@
 		C91B23BE2B535D9B00BAF6F8 /* TikTok-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				C91B23BF2B535D9B00BAF6F8 /* TikTok_SwiftUIApp.swift */,
-				C91B23C12B535D9B00BAF6F8 /* ContentView.swift */,
+				C91B23F32B5567A600BAF6F8 /* App */,
+				C91B23F22B5567A200BAF6F8 /* Core */,
+				C91B23F12B55679D00BAF6F8 /* Extension */,
+				C91B23F02B55679A00BAF6F8 /* Model */,
+				C91B23EF2B55679500BAF6F8 /* Services */,
+				C91B23EE2B55679000BAF6F8 /* Util */,
 				C91B23C32B535D9D00BAF6F8 /* Assets.xcassets */,
 				C91B23C52B535D9D00BAF6F8 /* Preview Content */,
 			);
@@ -125,6 +131,131 @@
 				C91B23DC2B535D9E00BAF6F8 /* TikTok_SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = "TikTok-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		C91B23EE2B55679000BAF6F8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C91B23EF2B55679500BAF6F8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C91B23F02B55679A00BAF6F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C91B23F12B55679D00BAF6F8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C91B23F22B5567A200BAF6F8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C91B23FD2B55681A00BAF6F8 /* Authentication */,
+				C91B23FC2B55681600BAF6F8 /* Comments */,
+				C91B23FB2B55681400BAF6F8 /* Components */,
+				C91B23FA2B55681100BAF6F8 /* Feed */,
+				C91B23F92B55680F00BAF6F8 /* Notification */,
+				C91B23F82B55680D00BAF6F8 /* Profile */,
+				C91B23F72B55680A00BAF6F8 /* Root */,
+				C91B23F62B55680700BAF6F8 /* Search */,
+				C91B23F52B55680400BAF6F8 /* TabBar */,
+				C91B23F42B5567FB00BAF6F8 /* UploadingMedia */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C91B23F32B5567A600BAF6F8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C91B23BF2B535D9B00BAF6F8 /* TikTok_SwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C91B23F42B5567FB00BAF6F8 /* UploadingMedia */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UploadingMedia;
+			sourceTree = "<group>";
+		};
+		C91B23F52B55680400BAF6F8 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C91B23FE2B556C3A00BAF6F8 /* MainTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C91B23F62B55680700BAF6F8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C91B23F72B55680A00BAF6F8 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				C91B23C12B535D9B00BAF6F8 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		C91B23F82B55680D00BAF6F8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C91B23F92B55680F00BAF6F8 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		C91B23FA2B55681100BAF6F8 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		C91B23FB2B55681400BAF6F8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C91B23FC2B55681600BAF6F8 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Comments;
+			sourceTree = "<group>";
+		};
+		C91B23FD2B55681A00BAF6F8 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +390,7 @@
 			files = (
 				C91B23C22B535D9B00BAF6F8 /* ContentView.swift in Sources */,
 				C91B23C02B535D9B00BAF6F8 /* TikTok_SwiftUIApp.swift in Sources */,
+				C91B23FF2B556C3A00BAF6F8 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
