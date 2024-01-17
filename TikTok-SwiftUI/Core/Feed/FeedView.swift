@@ -9,7 +9,22 @@ import SwiftUI
 
 struct FeedView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ScrollView {
+            LazyVStack {
+                ForEach(0..<10) {
+                    post in
+                    Rectangle()
+                        .fill(.pink)
+                        .containerRelativeFrame([.horizontal, .vertical])
+                        .overlay {
+                            Text("POST \(post)")
+                                .foregroundStyle(.white)
+                        }
+                }
+            }
+            .scrollTargetLayout()
+        }.scrollTargetBehavior(.paging)
     }
 }
 

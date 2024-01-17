@@ -12,8 +12,8 @@ struct MainTabView: View {
     @State private var selectedTab = 0
     var body: some View {
         TabView (selection: $selectedTab) {
-         
-         
+            
+            
             Text("Feed")
                 .tabItem {
                     VStack{
@@ -50,7 +50,7 @@ struct MainTabView: View {
                 .tabItem {
                     VStack{
                         Image(systemName: "heart")
-                           
+                        
                             .environment(\.symbolVariants, selectedTab == 3 ? .fill : .none)
                         Text("Home")
                     }
@@ -67,7 +67,7 @@ struct MainTabView: View {
                     }
                 }.onAppear() { selectedTab = 4}
                 .tag(4)
-        }
+        }.tint(.black)
     }
 }
 
