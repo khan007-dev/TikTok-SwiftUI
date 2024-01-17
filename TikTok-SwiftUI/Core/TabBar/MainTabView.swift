@@ -14,7 +14,7 @@ struct MainTabView: View {
         TabView (selection: $selectedTab) {
             
             
-            Text("Feed")
+            FeedView()
                 .tabItem {
                     VStack{
                         Image(systemName: selectedTab == 0 ? "house.fill": "house")

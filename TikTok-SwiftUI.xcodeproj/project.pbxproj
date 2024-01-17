@@ -16,6 +16,7 @@
 		C91B23DD2B535D9E00BAF6F8 /* TikTok_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B23DC2B535D9E00BAF6F8 /* TikTok_SwiftUIUITestsLaunchTests.swift */; };
 		C91B23FF2B556C3A00BAF6F8 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B23FE2B556C3A00BAF6F8 /* MainTabView.swift */; };
 		C91B250D2B57B28800BAF6F8 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B250C2B57B28800BAF6F8 /* FeedView.swift */; };
+		C91B250F2B57B3EC00BAF6F8 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B250E2B57B3EC00BAF6F8 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		C91B23DC2B535D9E00BAF6F8 /* TikTok_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTok_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C91B23FE2B556C3A00BAF6F8 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		C91B250C2B57B28800BAF6F8 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		C91B250E2B57B3EC00BAF6F8 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				C91B250C2B57B28800BAF6F8 /* FeedView.swift */,
+				C91B250E2B57B3EC00BAF6F8 /* FeedCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C91B250D2B57B28800BAF6F8 /* FeedView.swift in Sources */,
+				C91B250F2B57B3EC00BAF6F8 /* FeedCell.swift in Sources */,
 				C91B23C22B535D9B00BAF6F8 /* ContentView.swift in Sources */,
 				C91B23C02B535D9B00BAF6F8 /* TikTok_SwiftUIApp.swift in Sources */,
 				C91B23FF2B556C3A00BAF6F8 /* MainTabView.swift in Sources */,
