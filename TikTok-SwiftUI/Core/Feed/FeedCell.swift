@@ -34,27 +34,49 @@ struct FeedCell: View {
                     Spacer()
                     
                     VStack (spacing: 28) {
+                        
+                        Circle()
+                            .frame(width: 48, height: 48)
+                            .foregroundStyle(.gray)
                         Button(action: {}, label: {
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .frame(width: 28, height: 28)
-                                .foregroundStyle(.white)
+                            VStack {
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .frame(width: 28, height: 28)
+                                    .foregroundStyle(.white)
+                                Text("12")
+                                    .font(.footnote)
+                                    .foregroundStyle(.white)
+                            }
                             
                         })
                         
                         Button(action: {}, label: {
-                            Image(systemName: "ellipsis.bubble.fill")
-                                .resizable()
-                                .frame(width: 28, height: 28)
-                                .foregroundStyle(.white)
+                            VStack{
+                                Image(systemName: "ellipsis.bubble.fill")
+                                    .resizable()
+                                    .frame(width: 28, height: 28)
+                                    .foregroundStyle(.white)
+                                Text("12")
+                                    .font(.footnote)
+                                    .foregroundStyle(.white)
+                                
+                        
+                            }
+                            
                             
                         })
                         
                         Button(action: {}, label: {
-                            Image(systemName: "bookmark.fill")
-                                .resizable()
-                                .frame(width: 28, height: 28)
+                            VStack {
+                                Image(systemName: "bookmark.fill")
+                                    .resizable()
+                                    .frame(width: 28, height: 28)
                                 .foregroundStyle(.white)
+                                Text("12")
+                                    .font(.footnote)
+                                    .foregroundStyle(.white)
+                            }
                             
                         })
                         
@@ -66,7 +88,7 @@ struct FeedCell: View {
                             
                         })
                     }
-                }
+                }.padding(.bottom, 80)
             }.padding()
         }
     }
