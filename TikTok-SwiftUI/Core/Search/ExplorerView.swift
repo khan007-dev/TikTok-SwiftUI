@@ -10,15 +10,19 @@ import SwiftUI
 struct ExplorerView: View {
     var body: some View {
        
-        ScrollView {
-          
-            LazyVStack (spacing: 16) {
-                ForEach(0 ..< 20) { data in
-                
-                    UserCell()
-                        .padding(.horizontal)
+        NavigationStack {
+            ScrollView {
+              
+                LazyVStack (spacing: 16) {
+                    ForEach(0 ..< 20) { data in
+                    
+                        UserCell()
+                            .padding(.horizontal)
+                    }
                 }
-            }
+            }.navigationTitle("Explore View")
+                .navigationBarTitleDisplayMode(.inline)
+                .padding(.top)
         }
     }
 }
