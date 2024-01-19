@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct UserStateView: View {
+    let value: Int
+    let title: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    
+        VStack {
+            Text("\(value)")
+                .font(.subheadline)
+                .fontWeight(.bold)
+            
+            Text("\(title)")
+                .font(.caption)
+                .foregroundStyle(.gray)
+        }
+        .frame(width: 80, alignment: .center)
     }
 }
 
 #Preview {
-    UserStateView()
+    UserStateView(value: 2, title: "Follower")
 }

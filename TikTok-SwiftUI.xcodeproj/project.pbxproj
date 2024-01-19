@@ -21,6 +21,10 @@
 		C95BEFCC2B59E0F300F6F796 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFCB2B59E0F300F6F796 /* UserCell.swift */; };
 		C95BEFCE2B59E5B900F6F796 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFCD2B59E5B900F6F796 /* NotificationView.swift */; };
 		C95BEFD02B59E5CA00F6F796 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFCF2B59E5CA00F6F796 /* NotificationCell.swift */; };
+		C95BEFD22B5B23FD00F6F796 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFD12B5B23FD00F6F796 /* CurrentUserProfileView.swift */; };
+		C95BEFD42B5B246800F6F796 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFD32B5B246800F6F796 /* ProfileHeaderView.swift */; };
+		C95BEFD62B5B247A00F6F796 /* PostGrideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFD52B5B247A00F6F796 /* PostGrideView.swift */; };
+		C95BEFD92B5B268200F6F796 /* UserStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFD82B5B268200F6F796 /* UserStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		C95BEFCB2B59E0F300F6F796 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		C95BEFCD2B59E5B900F6F796 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		C95BEFCF2B59E5CA00F6F796 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		C95BEFD12B5B23FD00F6F796 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		C95BEFD32B5B246800F6F796 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		C95BEFD52B5B247A00F6F796 /* PostGrideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGrideView.swift; sourceTree = "<group>"; };
+		C95BEFD82B5B268200F6F796 /* UserStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +241,8 @@
 		C91B23F82B55680D00BAF6F8 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C95BEFD72B5B265300F6F796 /* Component */,
+				C95BEFD12B5B23FD00F6F796 /* CurrentUserProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -274,6 +284,16 @@
 			children = (
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C95BEFD72B5B265300F6F796 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				C95BEFD32B5B246800F6F796 /* ProfileHeaderView.swift */,
+				C95BEFD52B5B247A00F6F796 /* PostGrideView.swift */,
+				C95BEFD82B5B268200F6F796 /* UserStateView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,11 +428,15 @@
 			files = (
 				C91B250D2B57B28800BAF6F8 /* FeedView.swift in Sources */,
 				C95BEFD02B59E5CA00F6F796 /* NotificationCell.swift in Sources */,
+				C95BEFD42B5B246800F6F796 /* ProfileHeaderView.swift in Sources */,
 				C91B250F2B57B3EC00BAF6F8 /* FeedCell.swift in Sources */,
 				C91B23C22B535D9B00BAF6F8 /* ContentView.swift in Sources */,
 				C95BEFCE2B59E5B900F6F796 /* NotificationView.swift in Sources */,
+				C95BEFD92B5B268200F6F796 /* UserStateView.swift in Sources */,
+				C95BEFD62B5B247A00F6F796 /* PostGrideView.swift in Sources */,
 				C91B23C02B535D9B00BAF6F8 /* TikTok_SwiftUIApp.swift in Sources */,
 				C91B23FF2B556C3A00BAF6F8 /* MainTabView.swift in Sources */,
+				C95BEFD22B5B23FD00F6F796 /* CurrentUserProfileView.swift in Sources */,
 				C95BEFCA2B59E0E600F6F796 /* ExplorerView.swift in Sources */,
 				C95BEFCC2B59E0F300F6F796 /* UserCell.swift in Sources */,
 			);
