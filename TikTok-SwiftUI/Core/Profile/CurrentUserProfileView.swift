@@ -15,10 +15,14 @@ struct CurrentUserProfileView: View {
             ScrollView {
                 VStack (spacing: 2) {
                     // profile header
+                    ProfileHeaderView()
                     
                     // profile grid view
-                }
-            }
+                    PostGrideView()
+                    
+                }.padding(.top)
+            }.navigationTitle("Profile")
+                .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

@@ -42,6 +42,8 @@ struct ProfileHeaderView: View {
                     .background(Color(.systemGray5))
                     .clipShape(RoundedRectangle(cornerRadius: 6))
             })
+            
+            Divider()
         }
     }
 }
