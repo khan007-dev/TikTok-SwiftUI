@@ -19,6 +19,8 @@
 		C91B250F2B57B3EC00BAF6F8 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B250E2B57B3EC00BAF6F8 /* FeedCell.swift */; };
 		C95BEFCA2B59E0E600F6F796 /* ExplorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFC92B59E0E600F6F796 /* ExplorerView.swift */; };
 		C95BEFCC2B59E0F300F6F796 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFCB2B59E0F300F6F796 /* UserCell.swift */; };
+		C95BEFCE2B59E5B900F6F796 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFCD2B59E5B900F6F796 /* NotificationView.swift */; };
+		C95BEFD02B59E5CA00F6F796 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFCF2B59E5CA00F6F796 /* NotificationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		C91B250E2B57B3EC00BAF6F8 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		C95BEFC92B59E0E600F6F796 /* ExplorerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerView.swift; sourceTree = "<group>"; };
 		C95BEFCB2B59E0F300F6F796 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		C95BEFCD2B59E5B900F6F796 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		C95BEFCF2B59E5CA00F6F796 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +240,8 @@
 		C91B23F92B55680F00BAF6F8 /* Notification */ = {
 			isa = PBXGroup;
 			children = (
+				C95BEFCD2B59E5B900F6F796 /* NotificationView.swift */,
+				C95BEFCF2B59E5CA00F6F796 /* NotificationCell.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -401,8 +407,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C91B250D2B57B28800BAF6F8 /* FeedView.swift in Sources */,
+				C95BEFD02B59E5CA00F6F796 /* NotificationCell.swift in Sources */,
 				C91B250F2B57B3EC00BAF6F8 /* FeedCell.swift in Sources */,
 				C91B23C22B535D9B00BAF6F8 /* ContentView.swift in Sources */,
+				C95BEFCE2B59E5B900F6F796 /* NotificationView.swift in Sources */,
 				C91B23C02B535D9B00BAF6F8 /* TikTok_SwiftUIApp.swift in Sources */,
 				C91B23FF2B556C3A00BAF6F8 /* MainTabView.swift in Sources */,
 				C95BEFCA2B59E0E600F6F796 /* ExplorerView.swift in Sources */,

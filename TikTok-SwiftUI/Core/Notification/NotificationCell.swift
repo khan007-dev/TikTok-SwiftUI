@@ -9,7 +9,32 @@ import SwiftUI
 
 struct NotificationCell: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack {
+            
+            Image(systemName: "person.circle.fill")
+                .resizable()
+                .frame(width: 28, height: 28)
+                .foregroundStyle(Color(.gray))
+            
+            HStack {
+                Text("ab.waris")
+                    .font(.footnote)
+                    .fontWeight(.semibold)
+                
+                Text("liked one of your posts")
+                    .font(.footnote)
+                
+                Text("4d")
+                    .font(.caption)
+                    .foregroundStyle(.gray)
+                Spacer()
+                
+            }
+            
+            RoundedRectangle(cornerRadius: 6)
+                .frame(width: 48, height: 48)
+        }.padding(.horizontal)
     }
 }
 
