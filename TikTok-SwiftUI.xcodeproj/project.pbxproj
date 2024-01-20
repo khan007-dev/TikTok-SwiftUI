@@ -27,6 +27,7 @@
 		C95BEFD92B5B268200F6F796 /* UserStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFD82B5B268200F6F796 /* UserStateView.swift */; };
 		C95BEFDD2B5C51AD00F6F796 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFDC2B5C51AD00F6F796 /* Post.swift */; };
 		C95BEFE22B5C528700F6F796 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFE12B5C528700F6F796 /* FeedViewModel.swift */; };
+		C95BEFE52B5C717400F6F796 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFE42B5C717400F6F796 /* CustomVideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		C95BEFDC2B5C51AD00F6F796 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C95BEFE12B5C528700F6F796 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		C95BEFE32B5C574B00F6F796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C95BEFE42B5C717400F6F796 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +278,7 @@
 		C91B23FB2B55681400BAF6F8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C95BEFE42B5C717400F6F796 /* CustomVideoPlayer.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C91B250D2B57B28800BAF6F8 /* FeedView.swift in Sources */,
+				C95BEFE52B5C717400F6F796 /* CustomVideoPlayer.swift in Sources */,
 				C95BEFD02B59E5CA00F6F796 /* NotificationCell.swift in Sources */,
 				C95BEFD42B5B246800F6F796 /* ProfileHeaderView.swift in Sources */,
 				C91B250F2B57B3EC00BAF6F8 /* FeedCell.swift in Sources */,
