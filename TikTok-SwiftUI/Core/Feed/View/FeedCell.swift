@@ -94,9 +94,19 @@ struct FeedCell: View {
                 }.padding(.bottom, 80)
             }.padding()
         }
-        .onAppear {
-          //  player.play()
+        .onTapGesture {
+            switch player.timeControlStatus {
+            case .paused:
+                player.play()
+            case .waitingToPlayAtSpecifiedRate:
+                break
+            case .playing:
+                player.pause()
+            @unknown default:
+                break
+            }
         }
+        
     }
 }
 
