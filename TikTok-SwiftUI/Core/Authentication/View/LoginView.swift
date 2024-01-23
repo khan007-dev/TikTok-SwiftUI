@@ -14,7 +14,7 @@ struct LoginView: View {
        
         NavigationStack {
             VStack {
-                
+                Spacer()
                 Image(.tiktok)
                     .resizable()
                     .scaledToFit()

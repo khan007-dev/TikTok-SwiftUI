@@ -8,8 +8,68 @@
 import SwiftUI
 
 struct RegisterView: View {
+    @State private var email = ""
+    @State private var password = ""
+    @State private var fullName = ""
+    @State private var userName = ""
+    @Environment(\.dismiss) var dismiss
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    
+        VStack {
+            Spacer()
+            Image(.tiktok)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 120, height: 120)
+                .padding()
+            
+       
+                TextField("Enter Your Email", text: $email
+                ).textInputAutocapitalization(.never)
+                    .modifier(StandardTextFiledModifier())
+                SecureField("Enter Your password", text: $password)
+                    .modifier(StandardTextFiledModifier())
+            
+            TextField("Enter Your Full Name", text: $userName
+            ).textInputAutocapitalization(.never)
+                .modifier(StandardTextFiledModifier())
+            
+            TextField("Enter Your User name", text: $fullName
+            ).textInputAutocapitalization(.never)
+                .modifier(StandardTextFiledModifier())
+            
+            Button(action: {
+                
+            }, label: {
+                Text("Sign Up")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.white)
+                    .frame(width: 350, height: 50)
+                    .background(.pink)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                
+                
+            })
+            .padding(.vertical)
+            
+            Spacer()
+            Divider()
+            Button(action: {
+                dismiss()
+            }, label: {
+                HStack (spacing: 3) {
+                    Text("Already have an account")
+                    
+                    Text("Sign Up")
+                        .fontWeight(.semibold)
+                }
+                .font(.footnote)
+                .padding(.vertical)
+            })
+            
+        }
+        .navigationBarBackButtonHidden()
     }
 }
 
