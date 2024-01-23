@@ -29,6 +29,7 @@
 		C95BEFDD2B5C51AD00F6F796 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFDC2B5C51AD00F6F796 /* Post.swift */; };
 		C95BEFE22B5C528700F6F796 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFE12B5C528700F6F796 /* FeedViewModel.swift */; };
 		C95BEFE52B5C717400F6F796 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFE42B5C717400F6F796 /* CustomVideoPlayer.swift */; };
+		C975124F2B606E5700CFA166 /* AuthenticationFormProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C975124E2B606E5700CFA166 /* AuthenticationFormProtocol.swift */; };
 		C97ACF192B5F220C004FA3D2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ACF182B5F220C004FA3D2 /* LoginView.swift */; };
 		C97ACF1B2B5F221D004FA3D2 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ACF1A2B5F221D004FA3D2 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		C95BEFE12B5C528700F6F796 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		C95BEFE32B5C574B00F6F796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C95BEFE42B5C717400F6F796 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
+		C975124E2B606E5700CFA166 /* AuthenticationFormProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFormProtocol.swift; sourceTree = "<group>"; };
 		C97ACF182B5F220C004FA3D2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C97ACF1A2B5F221D004FA3D2 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -361,6 +363,7 @@
 		C97ACF142B5F21CE004FA3D2 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				C975124E2B606E5700CFA166 /* AuthenticationFormProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				C95BEFDD2B5C51AD00F6F796 /* Post.swift in Sources */,
 				C95BEFCE2B59E5B900F6F796 /* NotificationView.swift in Sources */,
 				C97ACF1B2B5F221D004FA3D2 /* RegisterView.swift in Sources */,
+				C975124F2B606E5700CFA166 /* AuthenticationFormProtocol.swift in Sources */,
 				C95BEFD92B5B268200F6F796 /* UserStateView.swift in Sources */,
 				C97ACF192B5F220C004FA3D2 /* LoginView.swift in Sources */,
 				C91EF1502B5F1CDA00928FBA /* StandardTextFiledModifier.swift in Sources */,

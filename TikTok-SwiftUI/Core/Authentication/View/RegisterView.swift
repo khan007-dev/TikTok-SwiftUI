@@ -52,6 +52,8 @@ struct RegisterView: View {
                 
             })
             .padding(.vertical)
+            .disabled(!formIsValid)
+            .opacity(formIsValid ? 1 : 0.7)
             
             Spacer()
             Divider()
@@ -66,6 +68,8 @@ struct RegisterView: View {
                 }
                 .font(.footnote)
                 .padding(.vertical)
+               
+                
             })
             
         }
@@ -73,6 +77,15 @@ struct RegisterView: View {
     }
 }
 
+extension RegisterView: AuthenticationFormProtocol {
+    var formIsValid: Bool {
+        return !email.isEmpty
+        && email.contains("@")
+        && !password.isEmpty
+        && !fullName.isEmpty
+        && !userName.isEmpty
+    }
+}
 #Preview {
     RegisterView()
 }
