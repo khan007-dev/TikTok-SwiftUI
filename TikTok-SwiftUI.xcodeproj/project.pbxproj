@@ -58,6 +58,9 @@
 		C97512842B62540200CFA166 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C97512832B62540200CFA166 /* FirebaseRemoteConfigSwift */; };
 		C97512862B62540200CFA166 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C97512852B62540200CFA166 /* FirebaseStorage */; };
 		C97512882B62540200CFA166 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = C97512872B62540200CFA166 /* FirebaseStorageCombine-Community */; };
+		C975128A2B62F69D00CFA166 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97512892B62F69D00CFA166 /* AuthService.swift */; };
+		C975128C2B62F7CE00CFA166 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C975128B2B62F7CE00CFA166 /* LoginViewModel.swift */; };
+		C975128E2B62FAD100CFA166 /* RegisterationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C975128D2B62FAD100CFA166 /* RegisterationViewModel.swift */; };
 		C97ACF192B5F220C004FA3D2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ACF182B5F220C004FA3D2 /* LoginView.swift */; };
 		C97ACF1B2B5F221D004FA3D2 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97ACF1A2B5F221D004FA3D2 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
@@ -108,6 +111,9 @@
 		C95BEFE42B5C717400F6F796 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 		C975124E2B606E5700CFA166 /* AuthenticationFormProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFormProtocol.swift; sourceTree = "<group>"; };
 		C97512502B624D6C00CFA166 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C97512892B62F69D00CFA166 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C975128B2B62F7CE00CFA166 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C975128D2B62FAD100CFA166 /* RegisterationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationViewModel.swift; sourceTree = "<group>"; };
 		C97ACF182B5F220C004FA3D2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C97ACF1A2B5F221D004FA3D2 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -397,6 +403,7 @@
 		C95BEFE02B5C526C00F6F796 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				C97512892B62F69D00CFA166 /* AuthService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -404,6 +411,8 @@
 		C97ACF102B5F21B5004FA3D2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C975128B2B62F7CE00CFA166 /* LoginViewModel.swift */,
+				C975128D2B62FAD100CFA166 /* RegisterationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -597,10 +606,13 @@
 			files = (
 				C91B250D2B57B28800BAF6F8 /* FeedView.swift in Sources */,
 				C95BEFE52B5C717400F6F796 /* CustomVideoPlayer.swift in Sources */,
+				C975128C2B62F7CE00CFA166 /* LoginViewModel.swift in Sources */,
+				C975128E2B62FAD100CFA166 /* RegisterationViewModel.swift in Sources */,
 				C95BEFD02B59E5CA00F6F796 /* NotificationCell.swift in Sources */,
 				C95BEFD42B5B246800F6F796 /* ProfileHeaderView.swift in Sources */,
 				C91B250F2B57B3EC00BAF6F8 /* FeedCell.swift in Sources */,
 				C91B23C22B535D9B00BAF6F8 /* ContentView.swift in Sources */,
+				C975128A2B62F69D00CFA166 /* AuthService.swift in Sources */,
 				C95BEFE22B5C528700F6F796 /* FeedViewModel.swift in Sources */,
 				C95BEFDD2B5C51AD00F6F796 /* Post.swift in Sources */,
 				C95BEFCE2B59E5B900F6F796 /* NotificationView.swift in Sources */,

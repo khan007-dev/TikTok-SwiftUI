@@ -13,6 +13,7 @@ struct RegisterView: View {
     @State private var fullName = ""
     @State private var userName = ""
     @Environment(\.dismiss) var dismiss
+    @StateObject var viewModel = RegisterationViewModel(authService: AuthService())
     var body: some View {
     
         VStack {
@@ -39,6 +40,13 @@ struct RegisterView: View {
                 .modifier(StandardTextFiledModifier())
             
             Button(action: {
+                
+                Task {
+                    await viewModel.createUser(withEmail: email,
+                                               password: password,
+                                               username: userName,
+                                               fullname: fullName)
+                }
                 
             }, label: {
                 Text("Sign Up")
