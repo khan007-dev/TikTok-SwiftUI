@@ -13,9 +13,17 @@ struct RegisterView: View {
     @State private var fullName = ""
     @State private var userName = ""
     @Environment(\.dismiss) var dismiss
-    @StateObject var viewModel = RegisterationViewModel(authService: AuthService())
+    @StateObject var viewModel: RegisterationViewModel
+    
+    private let authService: AuthService
+    
+    init(authService: AuthService)  {
+        self.authService = authService
+        self._viewModel = StateObject(wrappedValue: RegisterationViewModel(authService: authService))
+    }
     var body: some View {
     
+        
         VStack {
             Spacer()
             Image(.tiktok)
@@ -95,5 +103,5 @@ extension RegisterView: AuthenticationFormProtocol {
     }
 }
 #Preview {
-    RegisterView()
+    RegisterView(authService: AuthService())
 }
