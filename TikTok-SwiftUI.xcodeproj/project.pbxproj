@@ -21,6 +21,7 @@
 		C93FC6222B666AA3000D37EB /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC6212B666AA3000D37EB /* PreviewProvider.swift */; };
 		C93FC6262B666DF6000D37EB /* ExplorerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC6252B666DF6000D37EB /* ExplorerViewModel.swift */; };
 		C93FC62B2B667901000D37EB /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC62A2B667901000D37EB /* UserProfileView.swift */; };
+		C93FC66D2B66E78A000D37EB /* Firesstore+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC66C2B66E78A000D37EB /* Firesstore+Constants.swift */; };
 		C95BEFCA2B59E0E600F6F796 /* ExplorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFC92B59E0E600F6F796 /* ExplorerView.swift */; };
 		C95BEFCC2B59E0F300F6F796 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFCB2B59E0F300F6F796 /* UserCell.swift */; };
 		C95BEFCE2B59E5B900F6F796 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95BEFCD2B59E5B900F6F796 /* NotificationView.swift */; };
@@ -106,6 +107,7 @@
 		C93FC6212B666AA3000D37EB /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		C93FC6252B666DF6000D37EB /* ExplorerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerViewModel.swift; sourceTree = "<group>"; };
 		C93FC62A2B667901000D37EB /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		C93FC66C2B66E78A000D37EB /* Firesstore+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firesstore+Constants.swift"; sourceTree = "<group>"; };
 		C95BEFC92B59E0E600F6F796 /* ExplorerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerView.swift; sourceTree = "<group>"; };
 		C95BEFCB2B59E0F300F6F796 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		C95BEFCD2B59E5B900F6F796 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 		C91B23EE2B55679000BAF6F8 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				C93FC66B2B66E76A000D37EB /* Constants */,
 				C91EF14F2B5F1CDA00928FBA /* StandardTextFiledModifier.swift */,
 			);
 			path = Util;
@@ -415,6 +418,14 @@
 				C93FC62A2B667901000D37EB /* UserProfileView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C93FC66B2B66E76A000D37EB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C93FC66C2B66E78A000D37EB /* Firesstore+Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		C95BEFD72B5B265300F6F796 /* Component */ = {
@@ -669,6 +680,7 @@
 				C97512DF2B64F5E300CFA166 /* User.swift in Sources */,
 				C975128E2B62FAD100CFA166 /* RegisterationViewModel.swift in Sources */,
 				C95BEFD02B59E5CA00F6F796 /* NotificationCell.swift in Sources */,
+				C93FC66D2B66E78A000D37EB /* Firesstore+Constants.swift in Sources */,
 				C97512E12B64F67800CFA166 /* UserService.swift in Sources */,
 				C93FC6222B666AA3000D37EB /* PreviewProvider.swift in Sources */,
 				C95BEFD42B5B246800F6F796 /* ProfileHeaderView.swift in Sources */,

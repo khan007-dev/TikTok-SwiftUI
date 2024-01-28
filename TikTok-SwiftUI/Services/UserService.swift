@@ -16,12 +16,21 @@ protocol UserServiceProtocol {
 }
 struct UserService: UserServiceProtocol {
     
-    
+    func fetchCurrentUser() async throws -> User? {
+        
+        guard let currentid = Auth.auth().currentUser?.uid else { return nil }
+        
+        let currentUser = try await FirestoreConstants.UserCollection.document(currentid).getDocument(as: User.self)
+        
+        print("Current User \(currentUser)")
+        
+        return currentUser
+    }
     func uploadUserData(_ user: User) async throws {
         
         do {
             let userData = try Firestore.Encoder().encode(user)
-            try await Firestore.firestore().collection("users").document(user.id)
+            try await FirestoreConstants.UserCollection.document(user.id)
                 .setData(userData)
         }
         catch {

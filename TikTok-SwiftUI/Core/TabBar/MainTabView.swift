@@ -11,9 +11,11 @@ struct MainTabView: View {
     
     @State private var selectedTab = 0
     private let authService: AuthService
+    private let user: User
     
-    init(authService: AuthService) {
+    init(authService: AuthService, user: User) {
         self.authService = authService
+        self.user = user
     }
     var body: some View {
         TabView (selection: $selectedTab) {
@@ -63,7 +65,7 @@ struct MainTabView: View {
                 .tag(3)
             
             
-            CurrentUserProfileView(authService: authService)
+            CurrentUserProfileView(authService: authService, user: user)
                 .tabItem {
                     VStack{
                         Image(systemName: "person")
@@ -77,5 +79,5 @@ struct MainTabView: View {
 }
 
 #Preview {
-    MainTabView(authService: AuthService())
+    MainTabView(authService: AuthService(), user: DeveloperPreview.user)
 }

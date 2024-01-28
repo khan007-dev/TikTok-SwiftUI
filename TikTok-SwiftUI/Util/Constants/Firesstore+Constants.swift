@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import FirebaseFirestore
+
+struct FirestoreConstants {
+    static let Root = Firestore.firestore()
+    
+    static let UserCollection = Root.collection("users")
+}
