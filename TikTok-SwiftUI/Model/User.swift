@@ -16,3 +16,7 @@ struct User: Identifiable, Codable {
     var profileImageUrl: String?
     
 }
+
+extension User: Hashable {
+    
+}

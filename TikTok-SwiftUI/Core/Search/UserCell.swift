@@ -24,6 +24,7 @@ struct UserCell: View {
                 Text(user.fullname)
                     .font(.footnote)
             }
+            .foregroundStyle(Color.black)
             
             Spacer()
         }

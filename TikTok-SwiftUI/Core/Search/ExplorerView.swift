@@ -18,11 +18,17 @@ struct ExplorerView: View {
                 LazyVStack (spacing: 16) {
                     ForEach(viewModel.users) { user in
                     
+                        NavigationLink(value: user) {
                         UserCell(user: user)
-                            .padding(.horizontal)
+                                .padding(.horizontal)
+                        }
+                           
                     }
                 }
-            }.navigationTitle("Explore View")
+            }.navigationDestination(for: User.self, destination: {user in
+             UserProfileView(user: user)
+            })
+            .navigationTitle("Explore View")
                 .navigationBarTitleDisplayMode(.inline)
                 .padding(.top)
         }
